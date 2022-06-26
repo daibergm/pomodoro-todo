@@ -1,0 +1,17 @@
+{
+  "name": "pomodoro-todo-monorepo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "up:components": "cd components && yarn install --frozen-lockfile",
+    "build:components": "cd components && yarn rollup",
+    "build:storybook": "cd components && yarn build:storybook",
+    "lint:components": "cd components && yarn lint",
+    "coverage:components": "cd components && yarn coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
