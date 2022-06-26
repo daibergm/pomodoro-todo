@@ -1,15 +1,15 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import React from 'react';
 
-import { Button } from '../../components';
+import { Button } from '../../../components';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Components/Buttons',
+  title: 'Atoms/Buttons',
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    label: { control: 'text' },
+    children: { control: 'text' },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -19,5 +19,5 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Common = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Common.args = {
-  label: 'Button',
+  children: 'Common',
 };
